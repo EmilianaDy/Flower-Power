@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <title>Flower Power</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link href='https://fonts.googleapis.com/css?family=Catamaran:400,200,300,500,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Amaranth:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <header class="sticky">
+        <div class="header-container">
+        <a href="/"><h1 class="header-logo">Flower Power</h1></a>
+            <ul class="header-nav">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#our-work">OUR WORK</a></li>
+                <li><a href="#workshop">FREE WORKSHOP</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+        
+
+    <section class="about">
+    <h1 id="about" class="anchor about-header  animated fadeInDown">Where magic happens</h1>
+    <div class="container-about">
+    <img src="assets/boho-flowers2.jpg" alt="Flowers">
+    <p class="about-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. </br></br>Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus.</p>
+</div>
+    </section>
+    
+    <section class="icon-set">
+        <div class="container-icon-set">
+            <div class="icon-set-item">
+                <img src="assets/hourglass.png" alt="hourglass" class="icon-set-img">
+                <p class="icon-set-text">We are fast</p>
+            </div>
+            <div class="icon-set-item">
+                <img src="assets/nature.png" alt="nature" class="icon-set-img">
+                <p class="icon-set-text">We love flowers</p>
+            </div>
+            <div class="icon-set-item">
+                <img src="assets/stemware.png" alt="stemware" class="icon-set-img">
+                <p class="icon-set-text">We love celebrating</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-work">
+    <h1 id="our-work" class="anchor our-work-header">We do awesome stuff!</h1>
+    <div class="container-our-work">
+    
+    <p class="our-work-text our-work-text-2">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. </p>
+    <p class="our-work-text our-work-text-1">Check our work:</p>
+    <div class="img-wrapper">
+    <img class="our-work-img" src="assets/boho1.jpg" alt="wedding">
+    <img class="our-work-img" src="assets/boho4.jpg" alt="bouquet">
+    <img class="our-work-img" src="assets/boho2.jpg" alt="table">
+    </div>
+    </div>
+    </section>
+
+    <section class="workshop">
+    <h1 id="workshop" class="anchor workshop-header">Wanna learn with us?</h1>
+    
+    <div class="workshop-content">
+    <p class="workshop-text">Good for you. Join our free workshop. Tell us why you want to learn flower magic.</p>
+
+    <form action: "" method="post" enctype="text/plain">
+    <div>
+        <label for="name"></label>
+        <input type="text" id="name" placeholder="Your Name" />
+    </div>
+    <div>
+        <label for="email"></label>
+        <input type="email" id="mail" placeholder="Your Email" />
+    </div>
+    <div class="msg-field">
+        <label for="msg" class="msg-text"></label>
+        <textarea id="msg" placeholder="Message"></textarea>
+    </div>
+
+    <div class="form-button">
+        <button type="submit" class="button">send</button>
+    </div>
+    </form>
+    </div>
+    </section>
+
+    <section class="contact">
+    <h1 id="contact" class="anchor contact-header">Come &amp; say hi</h1>
+    <div class="contact-info">
+    <img class="home-icon" src="assets/letter.png" alt="home">
+    <p class="address">Flower Power Studio </br>Sunset Street 265</br>Antananarivo, Madagaskar</br><span>flower@power.com</span></p>
+    
+    <div id="map"></div>
+    </div>
+    </section>
+
+    <footer>
+        
+        <div class="social">
+        <p>Follow us:</p>
+        <img src="assets/facebook-24.png" alt="facebook">
+        <img src="assets/instagram-24.png" alt="instagram">
+        <img src="assets/twitter-3-24.png" alt="twitter">
+        </div>
+        <p class="copyright">&copy;Emi G 2016</p>
+        
+    </footer>
+    <script>
+  function initMap() {
+    var myLatLng = {lat: -18.882753, lng: 47.50701};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 6,
+      center: myLatLng,
+      scrollwheel: false,
+    });
+    var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+  }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGp6Xju9dKjLo61CDNZ3-UvP_Q1ClYmgY&callback=initMap">async defer></script>
+</body>
+
+
+</html>
