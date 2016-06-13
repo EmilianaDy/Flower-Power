@@ -66,6 +66,12 @@ ul {
     text-align: center;
 }
 
+@media all and (max-width: 510px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 li {
     padding: 10px;
     flex: 1;
@@ -102,6 +108,15 @@ a:active {
     color: #7D7C7F;
 }
 
+@media all and (max-width: 947px) and (min-width: 300px) {
+    .header {
+        transition: none;
+    }
+    .header-logo {
+        transition: none;
+        font-size: 24px;
+    }
+}
 /* ABOUT */
 
 .about-header {
