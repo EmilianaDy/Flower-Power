@@ -5,6 +5,8 @@
     font-style: normal;
 }
 
+
+
 * ,
 *:before,
 *:after {
@@ -99,6 +101,7 @@ a:hover {
 a:active {
     color: #7D7C7F;
 }
+
 /* ABOUT */
 
 .about-header {
@@ -122,6 +125,16 @@ img {
     padding-right: 30px;
     padding-bottom: 30px;
 }
+
+@media all and (max-width: 550px) and (min-width: 300px) {
+    .container-about img{
+        float: none;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+        padding: 0px 0px 20px 0px;
+    }
+    }
 
 .about-text {
     margin: 0;
@@ -182,7 +195,7 @@ img {
 }
 
 .our-work-text-2 {
-    max-width:500px;
+    max-width: 500px;
     margin: auto;
 }
 
@@ -195,6 +208,7 @@ img {
 .our-work-img {
     width: 270px;
     height: 370px;
+    max-width: 100%;
 
 }
 
