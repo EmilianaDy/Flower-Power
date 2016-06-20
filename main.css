@@ -174,7 +174,7 @@ img {
         flex-wrap: wrap;
         margin: 0 auto;
         overflow: hidden;
-        height: 500px;
+        height: 100%;
     }
 }
 
@@ -282,6 +282,17 @@ form {
     margin: 20px;
 }
 
+@media all and (max-width: 740px) and (min-width: 300px) {
+    form {
+        width: 80%;
+    }
+    .input-area {
+        width: 100%;
+    }
+    #name, #mail, #msg {
+        width: 80%;
+    }
+}
 input{
     margin: 0;
     width: 20em;
