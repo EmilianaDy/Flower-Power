@@ -258,6 +258,10 @@ img {
     text-align: center;
 }
 
+.workshop-text {
+    padding: 20px;
+}
+
 .workshop-header {
     margin: 0;
     padding: 20px;
@@ -357,6 +361,7 @@ input:focus, textarea:focus {
     overflow: hidden;
 }
 
+
 .contact-header {
     margin: 0;
     text-align: center;
@@ -368,18 +373,37 @@ input:focus, textarea:focus {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
  }
 
+@media all and (max-width: 880px) and (min-width: 300px) {
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 590px) and (min-width: 300px) {
+    #map {
+        display: none;
+    }
+}
 .address {
     margin: auto;
     font-weight: bold;
     font-size: 1.3em;
+    padding: 40px;
+    text-align: center;
 }
 
+@media all and (max-width: 590px) and (min-width: 300px) {
+    .address {
+        font-weight: normal;
+    }
+}
 .home-icon {
     left: 30px;
     margin: auto;
-    padding: 0px;
+    padding: 20px;
 }
 
 #map {
@@ -388,12 +412,26 @@ input:focus, textarea:focus {
     float: right;
     margin: auto;
     margin-bottom: 30px;
+    padding: 20px;
 }
 
 .anchor {
     padding-top: 65px;
 }
 
+#map-link {
+    display: none;
+}
+
+@media all and (max-width: 590px) and (min-width: 300px) {
+    #map-link {
+        display: block;
+        text-decoration: underline;
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
 
 /* FOOTER */
 
