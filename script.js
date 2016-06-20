@@ -16,3 +16,15 @@ function getCurrentScroll() {
     }
 });
 
+$(document).ready(function() {
+ 
+  $("#owl-example").owlCarousel({
+
+    items : 4,
+    itemsDesktop : [1400,3], 
+    itemsTablet : [960, 2],
+    itemsMobile : [565, 1],
+  }
+    );
+ 
+});
