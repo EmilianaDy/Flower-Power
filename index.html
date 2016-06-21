@@ -11,112 +11,119 @@
     <link rel="stylesheet" href="normalize.css" />
     <link href='https://fonts.googleapis.com/css?family=Catamaran:400,200,300,500,600,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Amaranth:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="owl.carousel/owl-carousel/owl.carousel.js"></script>
-    
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="parallax.js-1.4.2/parallax.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
     <header class="sticky">
         <div class="header-container">
-        <a href="/"><h1 class="header-logo">Flower Power</h1></a>
-            <ul class="header-nav">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#our-work">OUR WORK</a></li>
-                <li><a href="#workshop">FREE WORKSHOP</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
+        <a href="index.html"><h1 class="header-logo">Flower Power</h1></a>
+        
+        <!-- TO DO
+        <div id="hamburger-menu">
+            <button class="hamburger hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner">
+                </span>
+                </span>
+            </button>
+        </div>
+    -->
+        <ul class="header-nav">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#our-work">OUR WORK</a></li>
+            <li><a href="#workshop">FREE WORKSHOP</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
         </div>
     </header>
         
 
     <section class="about">
-    <h1 id="about" class="anchor about-header">Where magic happens</h1>
-    <div class="container-about">
-    <img id="florist" src="assets/hydrangea-flower.png" alt="Flowers">
-    <p class="about-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </br></br></br>Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Integer aliquam purus.</p>
-</div>
+        <h1 id="about" class="anchor about-header">Welcome to our magic flower shop!</h1>
+        <div class="container-about">
+        <img id="flower-graphic" src="assets/hydrangea-flower.png" alt="Flowers">
+        <p id="about-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </br></br></br>Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Integer aliquam purus.</p>
+        </div>
     </section>
 
     <div class="parallax-window background-image" data-parallax="scroll" data-image-src="assets/florist-cutting.jpg"></div>
     
     <section class="icon-set">
         <div class="container-icon-set">
-            <div class="icon-set-item">
-                <img src="assets/hourglass.png" alt="hourglass" class="icon-set-img">
-                <p class="icon-set-text">We are fast</p>
-            </div>
-            <div class="icon-set-item">
-                <img src="assets/nature.png" alt="nature" class="icon-set-img">
-                <p class="icon-set-text">We love flowers</p>
-            </div>
-            <div class="icon-set-item">
-                <img src="assets/stemware.png" alt="stemware" class="icon-set-img">
-                <p class="icon-set-text">We love celebrating</p>
-            </div>
+        <div class="icon-set-item">
+        <img src="assets/hourglass.png" alt="hourglass" class="icon-set-img">
+        <p class="icon-set-text">We are fast</p>
+        </div>
+        <div class="icon-set-item">
+        <img src="assets/nature.png" alt="nature" class="icon-set-img">
+        <p class="icon-set-text">We love flowers</p>
+        </div>
+        <div class="icon-set-item">
+        <img src="assets/stemware.png" alt="stemware" class="icon-set-img">
+        <p class="icon-set-text">We love celebrating</p>
+        </div>
         </div>
     </section>
 
     <section class="our-work">
-    <h1 id="our-work" class="anchor our-work-header">We do awesome stuff!</h1>
-    <div class="container-our-work">
-    
-    <p class="our-work-text our-work-text-2">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. </p>
-    <p class="our-work-text our-work-text-1">Check our work:</p>
-    <div id="owl-example" class="owl-carousel">
-    <img class="our-work-img" src="assets/boho5.jpg" alt="table2">
-    <img class="our-work-img" src="assets/boho8.jpg" alt="wedding">
-    <img class="our-work-img" src="assets/boho4.jpg" alt="bouquet">
-    <img class="our-work-img" src="assets/boho2.jpg" alt="table">
-    <img class="our-work-img" src="assets/boho7.jpg" alt="table3">
-    </div>
-    </div>
+        <h1 class="anchor our-work-header">We do awesome stuff!</h1>
+        <div class="container-our-work">
+        <p class="our-work-text our-work-text-2">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. </p>
+        <p class="our-work-text our-work-text-1">Check our work:</p>
+        <div id="owl-example" class="owl-carousel">
+        <img class="our-work-img" src="assets/boho5.jpg" alt="table2">
+        <img class="our-work-img" src="assets/boho8.jpg" alt="wedding">
+        <img class="our-work-img" src="assets/boho4.jpg" alt="bouquet">
+        <img class="our-work-img" src="assets/boho2.jpg" alt="table">
+        <img class="our-work-img" src="assets/boho7.jpg" alt="table3">
+        </div>
+        </div>
     </section>
 
     <section class="workshop">
-    <h1 id="workshop" class="anchor workshop-header">Wanna learn with us?</h1>
-    
-    <div class="workshop-content">
-    <p class="workshop-text">Good for you. Join our free workshop. Tell us why you want to learn flower magic.</p>
+        <h1 id="workshop" class="anchor workshop-header">Wanna learn with us?</h1>
+        <div class="workshop-content">
+        <p class="workshop-text">Good for you. Join our free workshop. Tell us why you want to learn flower magic.</p>
 
-    <form action: "" method="post" enctype="text/plain">
-    <div class="input-area">
+        <form action: "" method="post" enctype="text/plain">
+        <div class="input-area">
         <label for="name"></label>
         <input type="text" id="name" placeholder="Your Name" />
-    </div>
-    <div class="input-area">
+        </div>
+        <div class="input-area">
         <label for="email"></label>
         <input type="email" id="mail" placeholder="Your Email" />
-    </div>
-    <div class="msg-field input-area">
+        </div>
+        <div class="msg-field input-area">
         <label for="msg" class="msg-text"></label>
         <textarea id="msg" placeholder="Message"></textarea>
-    </div>
+        </div>
 
-    <div class="form-button">
+        <div class="form-button">
         <button type="submit" class="button">send</button>
-    </div>
-    </form>
-    </div>
+        </div>
+        </form>
+        </div>
     </section>
 
     <section class="contact">
-    <h1 id="contact" class="anchor contact-header">Come &amp; Say Hi</h1>
-    <div class="contact-info">
-    <img class="home-icon" src="assets/letter.png" alt="home">
-    <p class="address">Flower Power Studio </br>Sunset Street 265</br>Antananarivo</br> Madagaskar</br><span>flower@power.com</span></p>
-    
-    <div id="map"></div>
-    </div>
-    <a id="map-link" target="_blank" href="https://www.google.pl/maps/place/Antananarywa,+Madagaskar/@-18.8876258,47.3720829,11z/data=!3m1!4b1!4m5!3m4!1s0x21f07de34f1f4eb3:0xdf110608bcc082f9!8m2!3d-18.8791902!4d47.5079055">Check on Google Maps!</a>
+        <h1 id="contact" class="anchor contact-header">Come &amp; Say Hi</h1>
+        <div class="contact-info">
+        <img class="home-icon" src="assets/letter.png" alt="home">
+        <p class="address">Flower Power Studio </br>Sunset Street 265</br>Antananarivo</br> Madagaskar</br><span>flower@power.com</span></p>
+        <div id="map"></div>
+        </div>
+        <a id="map-link" target="_blank" href="https://www.google.pl/maps/place/Antananarywa,+Madagaskar/@-18.8876258,47.3720829,11z/data=!3m1!4b1!4m5!3m4!1s0x21f07de34f1f4eb3:0xdf110608bcc082f9!8m2!3d-18.8791902!4d47.5079055">Check on Google Maps!</a>
     </section>
 
     <footer>
-        
         <div class="social">
         <p>Follow us:</p>
         <a target="_blank" href="http://facebook.com"><img src="assets/facebook-24.png" alt="facebook"></a>
@@ -124,10 +131,10 @@
         <a target="_blank" href="http://twitter.com"><img src="assets/twitter-3-24.png" alt="twitter"></a>
         </div>
         <p class="copyright">&copy;Emi G 2016</p>
-        
     </footer>
+
     <script>
-  function initMap() {
+    function initMap() {
     var myLatLng = {lat: -18.882753, lng: 47.50701};
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 6,
@@ -139,7 +146,7 @@
           map: map,
           title: 'Hello World!'
         });
-  }
+    }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGp6Xju9dKjLo61CDNZ3-UvP_Q1ClYmgY&callback=initMap">async defer></script>
 </body>

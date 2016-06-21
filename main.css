@@ -5,8 +5,6 @@
     font-style: normal;
 }
 
-
-
 * ,
 *:before,
 *:after {
@@ -31,7 +29,15 @@ header {
     transition: height 0.5s;
     width: 100%;
     z-index: 1000;
+}
 
+header.shrink {
+    height: 59px;
+}
+
+header.shrink h1 {
+    font-size: 24px;
+    transition: all 0.3s ease;
 }
 
 .header-container {
@@ -42,6 +48,13 @@ header {
     flex-direction: row;
 }
 
+@media all and (max-width: 510px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 .header-logo  {
     flex: 1;
     margin: 0;
@@ -50,6 +63,16 @@ header {
     transition: all  0.3s ease;
     font-family: "Nickainley-Normal";
     color: #fff;
+}
+
+@media all and (max-width: 947px) and (min-width: 300px) {
+    .header {
+        transition: none;
+    }
+    .header-logo {
+        transition: none;
+        font-size: 24px;
+    }
 }
 
 ul {
@@ -66,24 +89,9 @@ ul {
     text-align: center;
 }
 
-@media all and (max-width: 510px) {
-    .header-container {
-        flex-direction: column;
-        text-align: center;
-    }
-}
 li {
     padding: 10px;
     flex: 1;
-}
-
-header.shrink {
-    height: 59px;
-}
-
-header.shrink h1 {
-    font-size: 24px;
-    transition: all 0.3s ease;
 }
 
 a:link {
@@ -108,22 +116,22 @@ a:active {
     color: #7D7C7F;
 }
 
-@media all and (max-width: 947px) and (min-width: 300px) {
-    .header {
-        transition: none;
-    }
-    .header-logo {
-        transition: none;
-        font-size: 24px;
+/*
+@media all and (max-width: 2000px) and (min-width: 630px) {
+    #hamburger-menu {
+        display: none;
+        }
+}
+@media all and (max-width: 629px) and (min-width: 250px) {
+    ul {
+        display: none;
     }
 }
+
+*/
+
 
 /* ABOUT */
-
-.about-header {
-    text-align: center;
-    padding: 10px;
-}
 
 .about {
     background: #985E6D;
@@ -132,19 +140,19 @@ a:active {
     position: relative;
 }
 
+.about-header {
+    text-align: center;
+    padding: 10px;
+}
+
 .container-about {
     padding: 30px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-#florist {
-    float: left;
-    padding: 0px 50px 30px 30px;
-}
-
 @media all and (max-width: 550px) and (min-width: 300px) {
-    .container-about #florist{
+    .container-about #flower-graphic{
         float: none;
         width: auto;
         display: block;
@@ -154,12 +162,19 @@ a:active {
     }
     }
 
-.about-text {
+#flower-graphic {
+    float: left;
+    padding: 0px 50px 30px 30px;
+}
+
+#about-text {
     margin: 0;
     text-align: justify;
     padding: 20px;
     font-size: 1.3em;
 }
+
+/* PARALLAX */
 
 .parallax-window {
     height: 200px;
@@ -241,6 +256,7 @@ a:active {
         max-width: 285px;
     }
 }
+
 .our-work-text {
     padding: 20px;
     text-align: center;
@@ -272,10 +288,6 @@ a:active {
     text-align: center;
 }
 
-.workshop-text {
-    padding: 20px;
-}
-
 .workshop-header {
     margin: 0;
     padding: 20px;
@@ -285,6 +297,9 @@ a:active {
     margin: 0 auto;
 }
 
+.workshop-text {
+    padding: 20px;
+}
 
 /* FORM */
 
@@ -296,6 +311,7 @@ form {
     border-radius: 10px;
     overflow: hidden;
     width: 50%;
+    max-width: 500px;
     display: inline-block;
     margin: 20px;
 }
@@ -311,6 +327,7 @@ form {
         width: 80%;
     }
 }
+
 input{
     margin: 0;
     width: 20em;
@@ -368,13 +385,13 @@ input:focus, textarea:focus {
     outline: none;
     border: none;
 }
+
 /* CONTACT */
 
 .contact {
     background: #985E6D;
     overflow: hidden;
 }
-
 
 .contact-header {
     margin: 0;
@@ -388,6 +405,8 @@ input:focus, textarea:focus {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    max-width: 1000px;
+    margin: 0 auto;
  }
 
 @media all and (max-width: 880px) and (min-width: 300px) {
@@ -396,11 +415,12 @@ input:focus, textarea:focus {
     }
 }
 
-@media all and (max-width: 590px) and (min-width: 300px) {
-    #map {
-        display: none;
-    }
+.home-icon {
+    left: 30px;
+    margin: auto;
+    padding: 20px;
 }
+
 .address {
     margin: auto;
     font-weight: bold;
@@ -409,15 +429,15 @@ input:focus, textarea:focus {
     text-align: center;
 }
 
+span {
+    color: #fff;
+    font-weight: normal;
+}
+
 @media all and (max-width: 590px) and (min-width: 300px) {
     .address {
         font-weight: normal;
     }
-}
-.home-icon {
-    left: 30px;
-    margin: auto;
-    padding: 20px;
 }
 
 #map {
@@ -447,6 +467,13 @@ input:focus, textarea:focus {
     }
 }
 
+@media all and (max-width: 590px) and (min-width: 300px) {
+    #map {
+        display: none;
+    }
+}
+
+
 /* FOOTER */
 
 footer {
@@ -475,8 +502,5 @@ footer p {
     font-size: 0.8em;
 }
 
-span {
-    color: #fff;
-    font-weight: normal;
-}
+
 
