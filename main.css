@@ -441,37 +441,29 @@ span {
 }
 
 #map {
-    width: 500px;
-    height: 400px;
+    width: 70%;
+    height: 300px;
     float: right;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
 }
 
+@media all and (max-width: 2000px) and (min-width: 881px) {
+    #map {
+        width: 400px;
+        height: 400px;
+    }
+}
+
 .anchor {
     padding-top: 65px;
 }
 
-#map-link {
-    display: none;
-}
 
-@media all and (max-width: 590px) and (min-width: 300px) {
-    #map-link {
-        display: block;
-        text-decoration: underline;
-        padding: 20px;
-        margin: 0 auto;
-        text-align: center;
-    }
-}
 
-@media all and (max-width: 590px) and (min-width: 300px) {
-    #map {
-        display: none;
-    }
-}
+
+
 
 
 /* FOOTER */

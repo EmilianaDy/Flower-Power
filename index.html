@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="viewport" content="user-scalable=yes">
     <title>Flower Power</title>
     <link rel="stylesheet" href="owl.carousel/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl.carousel/owl-carousel/owl.theme.css">
@@ -119,7 +118,7 @@
         <p class="address">Flower Power Studio </br>Sunset Street 265</br>Antananarivo</br> Madagaskar</br><span>flower@power.com</span></p>
         <div id="map"></div>
         </div>
-        <a id="map-link" target="_blank" href="https://www.google.pl/maps/place/Antananarywa,+Madagaskar/@-18.8876258,47.3720829,11z/data=!3m1!4b1!4m5!3m4!1s0x21f07de34f1f4eb3:0xdf110608bcc082f9!8m2!3d-18.8791902!4d47.5079055">Check on Google Maps!</a>
+
     </section>
 
     <footer>
@@ -145,7 +144,14 @@
           map: map,
           title: 'Hello World!'
         });
+
+        google.maps.event.addDomListener(window, "resize", function() {
+   var center = map.getCenter();
+   google.maps.event.trigger(map, "resize");
+   map.setCenter(center); 
+})
     }
+
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGp6Xju9dKjLo61CDNZ3-UvP_Q1ClYmgY&callback=initMap">async defer></script>
 </body>
