@@ -132,6 +132,7 @@
     </footer>
 
     <script>
+    
     function initMap() {
     var myLatLng = {lat: -18.882753, lng: 47.50701};
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -145,14 +146,23 @@
           title: 'Hello World!'
     });
 
+   
     google.maps.event.addDomListener(window, "resize", function() {
+        if (resizeTimeout) {
+            clearTimeout(resizeTimeout);
+        }
+    var resizeTimeout = setTimeout(function() {
+
     var center = map.getCenter();
     google.maps.event.trigger(map, "resize");
     map.setCenter(center); 
     })
+    }, 250);
     }
 
+
     </script>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGp6Xju9dKjLo61CDNZ3-UvP_Q1ClYmgY&callback=initMap">async defer></script>
 </body>
 
