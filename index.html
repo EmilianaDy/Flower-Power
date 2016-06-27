@@ -134,30 +134,29 @@
     <script>
     
     function initMap() {
-    var myLatLng = {lat: -18.882753, lng: 47.50701};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 6,
-      center: myLatLng,
-      scrollwheel: false,
-    });
-    var marker = new google.maps.Marker({
+        var myLatLng = {lat: -18.882753, lng: 47.50701};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 6,
+          center: myLatLng,
+          scrollwheel: false,
+      });
+        var marker = new google.maps.Marker({
           position: myLatLng,
           map: map,
           title: 'Hello World!'
-    });
+      });
 
-   
-    google.maps.event.addDomListener(window, "resize", function() {
-        if (resizeTimeout) {
-            clearTimeout(resizeTimeout);
-        }
-    var resizeTimeout = setTimeout(function() {
 
-    var center = map.getCenter();
-    google.maps.event.trigger(map, "resize");
-    map.setCenter(center); 
-    })
-    }, 250);
+        google.maps.event.addDomListener(window, "resize", function() {
+            if (resizeTimeout) {
+                clearTimeout(resizeTimeout);
+            }
+            var resizeTimeout = setTimeout(function() {
+
+                google.maps.event.trigger(map, "resize");
+                map.setCenter(myLatLng); 
+            })
+        }, 250); 
     }
 
 

@@ -1,19 +1,19 @@
 $(function(){
  var shrinkHeader = 3;
-      $window = $(window)
-  $(window).scroll(function() {
-    var scroll = getCurrentScroll();
-      if ( scroll >= shrinkHeader && $window.width() > 947) {
-           $('header').addClass('shrink');
-        }
-        else {
-            $('header').removeClass('shrink');
-        }
-  });
+ $window = $(window)
+ $(window).scroll(function() {
+  var scroll = getCurrentScroll();
+  if ( scroll >= shrinkHeader && $window.width() > 947) {
+   $('header').addClass('shrink');
+ }
+ else {
+  $('header').removeClass('shrink');
+}
+});
 
-function getCurrentScroll() {
-    return window.pageYOffset;
-    }
+ function getCurrentScroll() {
+  return window.pageYOffset;
+}
 });
 
 $(document).ready(function() {
@@ -25,6 +25,6 @@ $(document).ready(function() {
     itemsTablet : [960, 2],
     itemsMobile : [565, 1],
   }
-    );
- 
+  );
+  
 });
