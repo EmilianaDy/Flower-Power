@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Nickainley-Normal";
-    src: local(Nickainley-Normal), url('Nickainley-Normal.otf') format('otf');
+    font-family: "nickainley-normal-webfont";
+    src: local(nickainley-normal-webfont), url('nickainley-normal-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -61,7 +61,7 @@ header.shrink h1 {
     font-size: 4em;
     padding: 20px;
     transition: all  0.3s ease;
-    font-family: "Nickainley-Normal";
+    font-family: "nickainley-normal-webfont";
     color: #fff;
 }
 
