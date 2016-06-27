@@ -71,7 +71,7 @@
     </section>
 
     <section class="our-work">
-        <h1 class="anchor our-work-header">We do awesome stuff!</h1>
+        <h1 id="our-work" class="anchor our-work-header">We do awesome stuff!</h1>
         <div class="container-our-work">
         <p class="our-work-text our-work-text-2">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. </p>
         <p class="our-work-text our-work-text-1">Check our work:</p>
@@ -143,13 +143,13 @@
           position: myLatLng,
           map: map,
           title: 'Hello World!'
-        });
+    });
 
-        google.maps.event.addDomListener(window, "resize", function() {
-   var center = map.getCenter();
-   google.maps.event.trigger(map, "resize");
-   map.setCenter(center); 
-})
+    google.maps.event.addDomListener(window, "resize", function() {
+    var center = map.getCenter();
+    google.maps.event.trigger(map, "resize");
+    map.setCenter(center); 
+    })
     }
 
     </script>
