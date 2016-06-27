@@ -197,7 +197,7 @@ a:active {
     margin: 0 auto;
 }
 
-@media all and (max-width: 580px) and (min-width: 300px) {
+@media all and (max-width: 654px) and (min-width: 300px) {
     .container-icon-set {
         flex-wrap: wrap;
         margin: 0 auto;
@@ -208,6 +208,7 @@ a:active {
 
 .icon-set-item {
     margin: auto;
+    padding: 25px;
 }
 
 .icon-set-img {
@@ -217,6 +218,7 @@ a:active {
 
 .icon-set-text {
     text-align: center;
+    padding-left: 30px;
 }
 
 
@@ -459,11 +461,6 @@ span {
 .anchor {
     padding-top: 65px;
 }
-
-
-
-
-
 
 
 /* FOOTER */
