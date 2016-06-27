@@ -116,6 +116,7 @@ a:active {
     color: #7D7C7F;
 }
 
+
 /*
 @media all and (max-width: 2000px) and (min-width: 630px) {
     #hamburger-menu {
@@ -134,7 +135,7 @@ a:active {
 /* ABOUT */
 
 .about {
-    background: #985E6D;
+    background: #fff;
     overflow: hidden;
     padding-top: 100px;
     position: relative;
@@ -143,7 +144,9 @@ a:active {
 .about-header {
     text-align: center;
     padding: 10px;
+
 }
+
 
 .container-about {
     padding: 30px;
@@ -174,11 +177,48 @@ a:active {
     font-size: 1.3em;
 }
 
+#shop-button {
+    background-color: #985E6D;
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    transition-duration: 0.4s;
+    float: right;
+    width: 180px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 30px 30px 30px;
+    font-size: 1.4em;
+}
+
+#shop-button:hover {
+    background-color: #192231;
+    color: #fff;
+    cursor: pointer;
+}
+
+#shop-button:focus {
+    outline: none;
+    border: none;
+}
+
+@media all and (max-width: 730px) and (min-width: 300px) {
+    #shop-button {
+        margin: 0 auto;
+        display: block;
+        float: none;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
 /* PARALLAX */
 
 .parallax-window {
     height: 200px;
-    background: transparent;
     width: 100%!important;
 }
 

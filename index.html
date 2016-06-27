@@ -48,7 +48,8 @@
         <div class="container-about">
         <img id="flower-graphic" src="assets/hydrangea-flower.png" alt="Flowers">
         <p id="about-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </br></br></br>Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Integer aliquam purus.</p>
-        </div>
+
+        <a id="shop-button" href="http://example.com">Shop now</a>
     </section>
 
     <div class="parallax-window background-image" data-parallax="scroll" data-image-src="assets/florist-cutting.jpg"></div>
@@ -152,7 +153,6 @@
                 clearTimeout(resizeTimeout);
             }
             var resizeTimeout = setTimeout(function() {
-
                 google.maps.event.trigger(map, "resize");
                 map.setCenter(myLatLng); 
             })
