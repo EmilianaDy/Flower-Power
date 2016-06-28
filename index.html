@@ -11,10 +11,11 @@
     <link href='https://fonts.googleapis.com/css?family=Amaranth:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="owl.carousel/owl-carousel/owl.carousel.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="parallax.js-1.4.2/parallax.js"></script>
+    <script src="form.js"></script>
     <script src="script.js"></script>
 </head>
 
@@ -91,19 +92,23 @@
         <div class="workshop-content">
         <p class="workshop-text">Good for you. Join our free workshop. Tell us why you want to learn flower magic.</p>
 
-        <form action: "" method="post" enctype="text/plain">
-        <div class="input-area">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your Name" />
-        </div>
-        <div class="input-area">
-        <label for="email">Email</label>
-        <input type="email" id="mail" placeholder="Your Email" />
-        </div>
-        <div class="msg-field input-area">
-        <label for="msg" class="msg-text">Message</label>
-        <textarea id="msg" placeholder="Your Message"></textarea>
-        </div>
+        <div id="form-messages"></div>
+        <form id="ajax-contact" action="mailer.php" method="post" enctype="text/plain">
+
+            <div class="input-area">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required/>
+            </div>
+
+            <div class="input-area">
+            <label for="email">Email</label>
+            <input type="email" id="mail" name="email" placeholder="Your Email" required/>
+            </div>
+
+            <div class="msg-field input-area">
+            <label for="msg" class="msg-text">Message</label>
+            <textarea id="msg" name="message" placeholder="Your Message" required></textarea>
+            </div>
 
         <div class="form-button">
         <button type="submit" class="button">send</button>
