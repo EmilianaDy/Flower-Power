@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="eng">
 <head>
     <meta charset="utf-8">
@@ -22,18 +23,9 @@
 <body>
     <header class="sticky">
         <div class="header-container">
-        <a href="index.html"><h1 class="header-logo">Flower Power</h1></a>
+        <a id="header-link" href="index.html"><h1 class="header-logo">Flower Power</h1></a>
         
-        <!-- TO DO
-        <div id="hamburger-menu">
-            <button class="hamburger hamburger--squeeze" type="button">
-                <span class="hamburger-box">
-                <span class="hamburger-inner">
-                </span>
-                </span>
-            </button>
-        </div>
-    -->
+    
         <ul class="header-nav">
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#our-work">OUR WORK</a></li>
@@ -93,21 +85,21 @@
         <p class="workshop-text">Good for you. Join our free workshop. Tell us why you want to learn flower magic.</p>
 
         <div id="form-messages"></div>
-        <form id="ajax-contact" action="mailer.php" method="post" enctype="text/plain">
+        <form id="ajax-contact" action="mailer2.php" method="post">
 
             <div class="input-area">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required/>
+            <input type="text" id="name" name="name" placeholder="Your Name" />
             </div>
 
             <div class="input-area">
             <label for="email">Email</label>
-            <input type="email" id="mail" name="email" placeholder="Your Email" required/>
+            <input type="email" id="mail" name="email" placeholder="Your Email" />
             </div>
 
             <div class="msg-field input-area">
             <label for="msg" class="msg-text">Message</label>
-            <textarea id="msg" name="message" placeholder="Your Message" required></textarea>
+            <textarea id="msg" name="message" placeholder="Your Message"></textarea>
             </div>
 
         <div class="form-button">

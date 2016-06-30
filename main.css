@@ -118,19 +118,8 @@ a:active {
 }
 
 
-/*
-@media all and (max-width: 2000px) and (min-width: 630px) {
-    #hamburger-menu {
-        display: none;
-        }
-}
-@media all and (max-width: 629px) and (min-width: 250px) {
-    ul {
-        display: none;
-    }
-}
 
-*/
+
 
 
 /* ABOUT */
@@ -418,8 +407,6 @@ label {
     text-align: left;
     padding-right: 10px;
 }
-
-
 
 .success {
   padding: 1em;

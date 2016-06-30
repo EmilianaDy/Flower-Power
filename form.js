@@ -20,6 +20,7 @@ $(function() {
             url: $(form).attr('action'),
             data: formData
         })
+
         .done(function(response) {
             // Make sure that the formMessages div has the 'success' class.
             $(formMessages).removeClass('error');
@@ -33,14 +34,15 @@ $(function() {
             $('#email').val('');
             $('#message').val('');
         })
-        .fail(function(data) {
+
+        .fail(function(response) {
             // Make sure that the formMessages div has the 'error' class.
             $(formMessages).removeClass('success');
             $(formMessages).addClass('error');
 
             // Set the message text.
-            if (data.responseText !== '') {
-                $(formMessages).text(data.responseText);
+            if (response.responseText !== '') {
+                $(formMessages).text(response.responseText);
             } else {
                 $(formMessages).text('Oops! An error occured and your message could not be sent.');
             }
