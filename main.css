@@ -74,6 +74,13 @@ header.shrink h1 {
         transition: none;
         font-size: 24px;
     }
+    a:link {
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        -ms-transition: none;
+        font-size: 18px;
+    }
 }
 
 ul {
@@ -113,13 +120,11 @@ a:hover {
     font-size: 18px;
 }
 
+
+
 a:active {
     color: #7D7C7F;
 }
-
-
-
-
 
 
 /* ABOUT */
@@ -136,7 +141,6 @@ a:active {
     padding: 10px;
 
 }
-
 
 .container-about {
     padding: 30px;
@@ -531,6 +535,18 @@ span {
 
 .anchor {
     padding-top: 65px;
+}
+
+@media all and (max-width: 805px) and (min-width: 511px) {
+    .anchor {
+        padding-top: 85px;
+    }
+}
+
+@media all and (max-width: 510px) and (min-width: 300px) {
+    .anchor {
+        padding-top: 160px;
+    }
 }
 
 
