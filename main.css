@@ -215,7 +215,7 @@ a:active {
 
 /* ICON-SET */
 
-.container-icon-set {
+.icon-set-container {
   display: flex;
   max-width: 1200px;
   height: 350px;
@@ -224,7 +224,7 @@ a:active {
 }
 
 @media all and (max-width: 654px) and (min-width: 300px) {
-  .container-icon-set {
+  .icon-set-container {
     overflow: hidden;
     height: 100%;
     margin: 0 auto;
@@ -261,26 +261,26 @@ a:active {
   text-align: center;
 }
 
-.container-our-work {
+.our-work-container {
   max-width: 1147px;
   padding: 10px;
   margin: 0 auto;
 }
 
 @media all and (max-width: 1470px) and (min-width: 960px) {
-  .container-our-work {
+  .our-work-container {
     max-width: 895px;
   }
 }
 
 @media all and (max-width: 960px) and (min-width: 565px) {
-  .container-our-work {
+  .our-work-container {
     max-width: 560px;
   }
 }
 
 @media all and (max-width: 565px) {
-  .container-our-work {
+  .our-work-container {
     max-width: 285px;
   }
 }
