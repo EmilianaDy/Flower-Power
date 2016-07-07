@@ -12,8 +12,8 @@
 }
 
 html {
-  font-family: 'Catamaran', sans-serif;
   color: #192231;
+  font-family: 'Catamaran', sans-serif;
 }
 
 h1 {
@@ -24,12 +24,12 @@ h1 {
 /*HEADER*/
 
 header {
-  background: #192231;
   position: fixed;
-  transition: height 0.4s ease;
-  width: 100%;
-  height: 120px;
   z-index: 1000;
+  height: 120px;
+  width: 100%;
+  background: #192231;
+  transition: height 0.4s ease;
 }
 
 header.shrink {
@@ -41,59 +41,59 @@ header.shrink h1 {
 }
 
 .header-container {
-  max-width: 1200px;
   display: flex;
-  flex-wrap: wrap;
+  max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
 @media all and (max-width: 510px) {
   .header-container {
-    flex-direction: column;
     text-align: center;
+    flex-direction: column;
   }
 }
 
 .header-logo  {
-  flex: 1;
-  margin: 0;
-  font-size: 4em;
   padding: 20px;
-  transition: all  0.3s ease;
-  font-family: "nickainley";
+  margin: 0;
   color: #fff;
+  font-family: "nickainley";
+  font-size: 4em;
+  transition: all  0.3s ease;
+  flex: 1;
 }
 
 @media all and (max-width: 947px) and (min-width: 300px) {
   header {
-    transition: none;
     height: auto;
+    transition: none;
   }
 
   .header-logo {
-    transition: none;
     font-size: 24px;
+    transition: none;
   }
 
   a:link {
-    transition: none;
     font-size: 18px;
+    transition: none;
   }
 }
 
 ul {
-  flex: 2;
-  list-style-type: none;
+  bottom: 0px;
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  bottom: 0px;
+  list-style-type: none;
   text-align: center;
+  flex: 2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 li {
@@ -102,8 +102,8 @@ li {
 }
 
 a:link {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
   transition: font-size 0.3s ease;
 }
 
@@ -124,32 +124,31 @@ a:active {
 /* ABOUT */
 
 .about {
-  background: #fff;
+  position: relative;
   overflow: hidden;
   padding-top: 100px;
-  position: relative;
+  background: #fff;
 }
 
 .about-header {
-  text-align: center;
   padding: 10px;
-
+  text-align: center;
 }
 
 .container-about {
-  padding: 30px;
   max-width: 1000px;
+  padding: 30px;
   margin: 0 auto;
 }
 
 @media all and (max-width: 550px) and (min-width: 300px) {
   .container-about .flower-graphic{
+    display: block;
     float: none;
     width: auto;
-    display: block;
-    margin: 0 auto;
-    padding: 0px 0px 30px 0px;
     height: 180px;
+    padding: 0px 0px 30px 0px;
+    margin: 0 auto;
   }
 }
 
@@ -159,27 +158,26 @@ a:active {
 }
 
 .about-text {
-  margin: 0;
-  text-align: justify;
   padding: 20px;
+  margin: 0;
   font-size: 1.3em;
+  text-align: justify;
 }
 
 .shop-button {
-  background-color: #985E6D;
-  border: none;
-  text-decoration: none;
-  font-size: 18px;
-  color: #fff;
-  transition-duration: 0.4s;
+  display: flex;
   float: right;
   width: 180px;
   height: 60px;
-  display: flex;
+  border: none;
+  margin: 30px 30px 30px 30px;
+  background-color: #985E6D;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition-duration: 0.4s;
   justify-content: center;
   align-items: center;
-  margin: 30px 30px 30px 30px;
-  font-size: 1.4em;
 }
 
 .shop-button:hover {
@@ -195,19 +193,19 @@ a:active {
 
 @media all and (max-width: 730px) and (min-width: 300px) {
   .shop-button {
-    margin: 0 auto;
     display: block;
     float: none;
-    text-align: center;
     padding: 10px;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
 /* PARALLAX */
 
 .parallax-window {
-  height: 200px;
   width: 100%!important;
+  height: 200px;
 }
 
 .parallax-slider {
@@ -219,24 +217,24 @@ a:active {
 
 .container-icon-set {
   display: flex;
-  height: 350px;
-  flex-direction: row;
   max-width: 1200px;
+  height: 350px;
   margin: 0 auto;
+  flex-direction: row;
 }
 
 @media all and (max-width: 654px) and (min-width: 300px) {
   .container-icon-set {
-    flex-wrap: wrap;
-    margin: 0 auto;
     overflow: hidden;
     height: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
   }
 }
 
 .icon-set-item {
-  margin: auto;
   padding: 25px;
+  margin: auto;
 }
 
 .icon-set-img {
@@ -245,28 +243,28 @@ a:active {
 }
 
 .icon-set-text {
-  text-align: center;
   padding-left: 30px;
+  text-align: center;
 }
 
 
 /*OUR WORK */
 
 .our-work {
-  background: #98878F;
   overflow: hidden;
+  background: #98878F;
 }
 
 .our-work-header {
-  margin: 0;
   padding: 30px 30px 0 30px;
+  margin: 0;
   text-align: center;
 }
 
 .container-our-work {
   max-width: 1147px;
-  margin: 0 auto;
   padding: 10px;
+  margin: 0 auto;
 }
 
 @media all and (max-width: 1470px) and (min-width: 960px) {
@@ -319,8 +317,8 @@ a:active {
 }
 
 .workshop-header {
-  margin: 0;
   padding: 20px;
+  margin: 0;
 }
 
 .workshop-content {
@@ -359,11 +357,11 @@ form {
 }
 
 .input{
-  margin: 0;
   width: 20em;
+  border-color: #192231;
   border-width: 0px 0px 1.5px 0px;
   border-style: solid;
-  border-color: #192231;
+  margin: 0;
   outline: none;
   flex: 3;
 }
@@ -376,9 +374,9 @@ form {
 
 form div {
   max-width: 500px;
-  flex: 1;
   padding: 1em;
   margin: 0 auto;
+  flex: 1;
 }
 
 textarea {
@@ -390,40 +388,40 @@ textarea {
 }
 
 .input:focus, textarea:focus {
-  border-width: 1.8px;
   border-color: #000;
+  border-width: 1.8px;
   border-radius: 5px;
 }
 
 .msg-field {
-  flex: 1;
   width: 90%;
+  flex: 1;
 }
 
 label {
-  flex: 1;
-  text-align: left;
   padding-right: 10px;
+  text-align: left;
+  flex: 1;
 }
 
 .success {
   padding: 1em;
-  margin-bottom: 0.75rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  color: #468847;
-  background-color: #dff0d8;
   border: 1px solid #d6e9c6;
   border-radius: 4px;
+  margin-bottom: 0.75rem;
+  background-color: #dff0d8;
+  color: #468847;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .error {
   padding: 1em;
-  margin-bottom: 0.75rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  color: #b94a48;
-  background-color: #f2dede;
   border: 1px solid rgba(185, 74, 72, 0.3);
   border-radius: 4px;
+  margin-bottom: 0.75rem;
+  background-color: #f2dede;
+  color: #b94a48;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 /* BUTTON */
@@ -433,12 +431,12 @@ label {
 }
 
 .button {
-  background-color: #fff;
-  border: solid 1px #192231;
-  text-decoration: none;
-  font-size: 18px;
-  color: #192231;
   padding: 10px 20px 10px 20px;
+  border: solid 1px #192231;
+  background-color: #fff;
+  color: #192231;
+  font-size: 18px;
+  text-decoration: none;
   transition-duration: 0.4s;
 }
 
@@ -449,31 +447,31 @@ label {
 }
 
 .button:focus {
-  outline: none;
   border: none;
+  outline: none;
 }
 
 /* CONTACT */
 
 .contact {
-  background: #985E6D;
   overflow: hidden;
+  background: #985E6D;
 }
 
 .contact-header {
+  padding-bottom: 40px;
   margin: 0;
   text-align: center;
-  padding-bottom: 40px;
 }
 
 .contact-info {
   position: relative;
   overflow: hidden;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   max-width: 1000px;
   margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 @media all and (max-width: 880px) and (min-width: 300px) {
@@ -484,15 +482,15 @@ label {
 
 .home-icon {
   left: 30px;
-  margin: auto;
   padding: 20px;
+  margin: auto;
 }
 
 .address {
+  padding: 40px;
   margin: auto;
   font-weight: bold;
   font-size: 1.3em;
-  padding: 40px;
   text-align: center;
 }
 
@@ -508,12 +506,12 @@ span {
 }
 
 #map {
+  float: right;
   width: 70%;
   height: 300px;
-  float: right;
+  padding: 20px;
   margin: auto;
   margin-bottom: 30px;
-  padding: 20px;
 }
 
 @media all and (max-width: 2000px) and (min-width: 881px) {
@@ -543,10 +541,10 @@ span {
 /* FOOTER */
 
 footer {
-  background: #192231;
-  text-align: center;
   height: 130px;
+  background: #192231;
   color: #fff;
+  text-align: center;
 }
 
 footer img {
@@ -554,14 +552,14 @@ footer img {
 }
 
 footer p {
-  margin: 0;
   padding: 10px;
+  margin: 0;
 }
 
 .social {
+  width: 300px;
   height: 86px;
   margin: 0 auto;
-  width: 300px;
 }
 
 .copyright {
